@@ -1,0 +1,50 @@
+/* .commentBox footer button span::before{
+  content: '\2022';
+  padding: 0 0.25rem;
+  } */
+
+.taskBox {
+  display: flex;
+  border: 1px solid var(--gray-400);
+  background: var(--gray-500);
+  border-radius: 8px;
+  margin-top: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.taskBox > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  line-height: 1.6;
+  color: var(--gray-100);
+}
+
+.completeTaskButton,
+.deleteButton {
+  background: transparent;
+  border: 0;
+  line-height: 0;
+  //border-radius: 2px;
+  cursor: pointer;
+}
+
+.deleteButton {
+  color: var(--gray-300);
+}
+
+/* .completeTaskImg-Checked {
+  color: var(--purple-100);
+  background: transparent;
+} */
+
+.completeTaskImg-NoChecked {
+  color: var(--blue-300);
+}
+
+.completeTaskText-Checked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
