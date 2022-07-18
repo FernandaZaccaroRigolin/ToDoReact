@@ -6,11 +6,11 @@
   position: relative;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   html {
     font-size: 87.4%;
   }
   .wrapper {
     width: 70%;
   }
-}
+} */

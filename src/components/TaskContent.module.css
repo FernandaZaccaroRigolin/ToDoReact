@@ -30,6 +30,16 @@
   color: var(--gray-100);
   width: 90px;
   justify-content: center;
+  transition: background-color 0.1s;
+}
+
+.taskForm button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.taskForm button[type='submit']:not(:disabled):hover {
+  background: var(--blue-300);
 }
 
 .taskListHeader {
@@ -56,6 +66,7 @@
   color: var(--gray-200);
   border-radius: 8px;
   font-size: 12px;
+  font-weight: bold;
   padding: 0.1rem 0.5rem;
 }
 

@@ -19,7 +19,7 @@ export function TaskContent(){
   //const newkey = uuidv4();
   //const TaskList = [{id: newkey, title: 'tarefa 1 ', isComplete:false}]
   //console.log(TaskList);
-  const [tasks, setTasks] = useState([{id:'', title: '', isCompleted: false}]);
+  const [tasks, setTasks] = useState([]);//{id:'', title: '', isCompleted: false}
   const [newTaskText, setNewTaskText] = useState('');
 
   function handleCreateNewTask(event: FormEvent){
@@ -38,6 +38,7 @@ export function TaskContent(){
   }
   
   function handleNewTaskInvalid(event: InvalidEvent<HTMLInputElement>){
+    console.log('Este campo é obrigatório');
     event.target.setCustomValidity('Este campo é obrigatório');
   }  
 
@@ -65,7 +66,7 @@ export function TaskContent(){
      return task.isCompleted; 
    }).length
 
-   //console.log(tasks);
+   
 
   return(
     <div>
@@ -80,7 +81,7 @@ export function TaskContent(){
         />
         <button 
           type='submit' 
-          //disabled={isNewCommentEmpty}
+          disabled={isNewCommentEmpty}
         >
           Criar
           <PlusCircle size={20} />
@@ -89,12 +90,12 @@ export function TaskContent(){
       <article>
         <header className={styles.taskListHeader}>
           <div className={styles.taskListHeaderL}>
-            <strong>Tarefas Criadas</strong>
+            <strong>Tarefas criadas</strong>
             <span>{completeCount}</span>
           </div>
           <div  className={styles.taskListHeaderR}>
             <strong>Concluídas</strong>
-            <span>{completeCount} de {taskCount}</span>
+            { tasks.length ==0 ? <span>0</span> : <span>{completeCount} de {taskCount}</span>}
           </div>
         </header>
 
