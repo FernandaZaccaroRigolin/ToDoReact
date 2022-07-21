@@ -35,6 +35,11 @@
   color: var(--gray-300);
 }
 
+.deleteButton:hover {
+  color: var(--red-500);
+  background: var(--gray-400);
+}
+
 /* .completeTaskImg-Checked {
   color: var(--purple-100);
   background: transparent;
@@ -42,6 +47,30 @@
 
 .completeTaskImg-NoChecked {
   color: var(--blue-300);
+}
+
+.completeTaskImg-NoChecked:hover {
+  color: var(--blue-500);
+}
+
+.completeTaskImg-Checked {
+  color: var(--purple-500);
+  //background: var(--gray-100);
+  border: 0;
+  line-height: 0;
+}
+
+.commentContent header button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+}
+
+.completeTaskImg-Checked:hover {
+  color: var(--purple-300);
 }
 
 .completeTaskText-Checked {

@@ -36,7 +36,9 @@ export function Task({id, title, isCompleted, onDeleteTask, onCompleteTask}: Tas
           //className={styles.completeTaskButton}
           className={MultClasses(styles.completeTaskButton, styles[`completeTaskImg-${type}`])}
         >
-          { isCompleted ? (<img src={checked} alt="checkbox"/>) : (<Circle size={18} />) }
+          {/* { isCompleted ? (<img src={checked} alt="checkbox"/>) : (<Circle size={18} />) } */}
+          { isCompleted ? (<CheckCircle size={24} weight="fill"/>) : (<Circle size={24} />) }
+
         </button>        
         <p className={MultClasses(styles.tasktitle, styles[`completeTaskText-${type}`])}>{title}</p> 
       </div>  
