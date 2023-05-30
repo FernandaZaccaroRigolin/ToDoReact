@@ -1,12 +1,12 @@
 <br /><br />
 <h4 align="center">
-<img src="./src/assets/logo.png" align="center"/>
+<img src="src/images/logo.png" align="center"/>
 </h4>
 <br /><br />
 
 # 💡 About
 
-**Simple React Native To-Do List App. Made for Rocketseat's React Native Ignite Challenge.**
+**The Todo List Project is a task list application that helps users manage their daily activities, whether it's for work, studies, or personal life. The application allows users to create, edit, mark as completed, and remove tasks in a simple and intuitive way.**
 
 # ⚙️ How to run
 
